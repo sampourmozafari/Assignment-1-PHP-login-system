@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  color: #404040; }
+
+a {
+  text-decoration: none; }
+
+.content {
+  height: 100vh;
+  background-color: white; }
+  .content .nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.8em 4em; }
+    .content .nav .left .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      font-family: "Arvo", serif;
+      font-size: 1.3em;
+      color: #00163b; }
+      .content .nav .left .logo .bordersymbol {
+        display: block;
+        height: 1.5em;
+        width: 1.5em;
+        border: 0.4rem solid #fbb040;
+        margin-right: 0.5rem; }
+      .content .nav .left .logo .accentcolor {
+        color: #fbb040; }
+    .content .nav .right a {
+      border-left: 0.1em solid #cccccc;
+      padding-left: 1.4em;
+      margin-left: 1em; }
+      .content .nav .right a:hover {
+        color: #333333; }
+  .content .wrapper {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center; }
+    .content .wrapper .login {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(-5em);
+      width: 22em; }
+      .content .wrapper .login h1 {
+        font-weight: 300;
+        border-left: 0.4rem solid #fbb040;
+        padding-left: 0.5em; }
+        .content .wrapper .login h1 .bold {
+          font-weight: 600; }
+      .content .wrapper .login form {
+        display: flex;
+        flex-direction: column; }
+        .content .wrapper .login form input {
+          border: none;
+          outline: none;
+          font-size: 1em;
+          background-color: transparent;
+          padding: 0.5em 0;
+          margin: 1em 0;
+          color: #404040; }
+          .content .wrapper .login form input::placeholder {
+            color: #bfbfbf;
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal; }
+        .content .wrapper .login form input[type=text] {
+          transition: border-bottom 0.2s ease-in;
+          border-bottom: 0.01em solid #807f7f; }
+          .content .wrapper .login form input[type=text]:focus {
+            border-bottom: 0.01em solid #fbb040; }
+        .content .wrapper .login form input[type=password] {
+          transition: border-bottom 0.2s ease-in;
+          border-bottom: 0.01em solid #807f7f; }
+          .content .wrapper .login form input[type=password]:focus {
+            border-bottom: 0.01em solid #fbb040; }
+        .content .wrapper .login form input[type=submit] {
+          color: #404040;
+          transition: color 0.2s ease-in;
+          padding: 0.7em 2em;
+          background-color: #fbb040;
+          transition: background-color 0.2s ease-in;
+          border-radius: 0.25em; }
+          .content .wrapper .login form input[type=submit]:hover {
+            cursor: pointer;
+            background-color: #404040;
+            color: white; }
+      .content .wrapper .login p {
+        color: #666666; }
+        .content .wrapper .login p a {
+          transition: color 0.2s ease-in; }
+          .content .wrapper .login p a:hover {
+            color: #404040; }
+
+.footer {
+  padding: 4em; }
+  .footer .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Arvo", serif;
+    font-size: 1.5em;
+    color: #00163b; }
+    .footer .logo .bordersymbol {
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+      border: 0.4rem solid #fbb040;
+      margin-right: 0.5rem; }
+    .footer .logo .accentcolor {
+      color: #fbb040; }
+  .footer p {
+    color: #666666; }
+    .footer p a {
+      transition: color 0.2s ease-in; }
+      .footer p a:hover {
+        color: #404040; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.bold {
+  font-weight: 600; }
+
+#alert {
+  display: flex;
+  justify-content: center;
+  padding: 0.4em 0; }
+
+.absocenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
